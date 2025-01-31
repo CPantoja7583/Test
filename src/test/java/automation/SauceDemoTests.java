@@ -1,6 +1,7 @@
 package automation;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.BaseTest;
@@ -70,6 +71,34 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
+    @Test
+    public void select1test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var selectWebElement =
+                driver.findElement(By.cssSelector("select[data-test='product-sort-container']"));
+
+        final var select = new Select(selectWebElement);
+
+        Logs.info("seleccionamos los items de manera alfabetica Z->A");
+        select.selectByValue("za");
+
+        final var itemList = driver.findElements(By.className("inventory_item_name"));
+
+        Logs.info("obteniendo el primer elemento");
+        final var primerElemento = itemList.get(0).getText();
+
+        Logs.info("Obteneiendo el ultimo elemento");
+        final var ultimoElemento = itemList.get(itemList.size() - 1).getText();
+
+        Logs.info("Verificando los nombres");
+        softAssert.assertEquals(primerElemento, "Test.allTheThings() T-Shirt (Red)");
+        softAssert.assertEquals(ultimoElemento, "Sauce Labs Backpack");
+        softAssert.assertAll();
+
+    }
+
+    
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("navegando a la pagina");
         driver.get("https://www.saucedemo.com/");
