@@ -97,7 +97,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
 
     }
-
+    
 
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("navegando a la pagina");
