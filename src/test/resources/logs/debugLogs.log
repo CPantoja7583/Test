@@ -1,0 +1,24 @@
+00:47:43.111 INFO  AUTOMATION - Suite iniciada: Default Suite
+00:47:43.190 DEBUG AUTOMATION - Borrando las carpetas de evidencia
+00:47:43.348 INFO  AUTOMATION - Setup del padre
+00:47:43.364 DEBUG AUTOMATION - Inicializando  el drive
+00:47:45.379 DEBUG AUTOMATION - Maximizando pantalla
+00:47:45.428 DEBUG AUTOMATION - Borrando cookies
+00:47:45.444 DEBUG AUTOMATION - Asignando driver al webdriver provider
+00:47:45.604 INFO  AUTOMATION - Comenzando el test: eleccionProductostest
+00:47:45.651 INFO  AUTOMATION - Navegando a https://opencart.abstracta.us/index.php?route=account/login 
+00:47:49.763 INFO  AUTOMATION - Haciendo click en opciones avanzadas
+00:47:52.848 INFO  AUTOMATION - Haciendo click en continuar en openabstract
+00:48:00.964 INFO  AUTOMATION - Escribiendo el username
+00:48:01.091 INFO  AUTOMATION - Escribiendo el password
+00:48:01.195 INFO  AUTOMATION - Haciendo click en botón de login
+00:48:07.702 INFO  AUTOMATION - Haciendo click en Your Store
+00:48:13.484 INFO  AUTOMATION - Haciendo click en MAcbook
+00:48:13.626 DEBUG AUTOMATION - beforeTestStop
+00:48:14.416 INFO  AUTOMATION - Test fallido: eleccionProductostest
+00:48:14.416 DEBUG AUTOMATION - Tomando capturas
+00:48:14.632 DEBUG AUTOMATION - tomando page source
+00:48:14.632 DEBUG AUTOMATION - Creando los directorios padres si es que no existen
+00:48:14.708 INFO  AUTOMATION - Teardown del padre
+00:48:14.708 DEBUG AUTOMATION - Matando el driver
+00:48:16.697 INFO  AUTOMATION - Suite finalizada: Default Suite

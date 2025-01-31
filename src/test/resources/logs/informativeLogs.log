@@ -1,0 +1,14 @@
+00:47:43.111 INFO  AUTOMATION - Suite iniciada: Default Suite
+00:47:43.348 INFO  AUTOMATION - Setup del padre
+00:47:45.604 INFO  AUTOMATION - Comenzando el test: eleccionProductostest
+00:47:45.651 INFO  AUTOMATION - Navegando a https://opencart.abstracta.us/index.php?route=account/login 
+00:47:49.763 INFO  AUTOMATION - Haciendo click en opciones avanzadas
+00:47:52.848 INFO  AUTOMATION - Haciendo click en continuar en openabstract
+00:48:00.964 INFO  AUTOMATION - Escribiendo el username
+00:48:01.091 INFO  AUTOMATION - Escribiendo el password
+00:48:01.195 INFO  AUTOMATION - Haciendo click en botón de login
+00:48:07.702 INFO  AUTOMATION - Haciendo click en Your Store
+00:48:13.484 INFO  AUTOMATION - Haciendo click en MAcbook
+00:48:14.416 INFO  AUTOMATION - Test fallido: eleccionProductostest
+00:48:14.708 INFO  AUTOMATION - Teardown del padre
+00:48:16.697 INFO  AUTOMATION - Suite finalizada: Default Suite
