@@ -98,7 +98,7 @@ public class SauceDemoTests extends BaseTest {
 
     }
 
-    
+
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("navegando a la pagina");
         driver.get("https://www.saucedemo.com/");
