@@ -1,8 +1,11 @@
-18:43:28.587 INFO  AUTOMATION - Suite iniciada: Default Suite
-18:43:28.774 INFO  AUTOMATION - Setup del padre
-18:43:32.215 INFO  AUTOMATION - Comenzando el test: keyboard2test
-18:43:32.261 INFO  AUTOMATION - Navegando a la pagina
-18:43:38.006 INFO  AUTOMATION - Esccribiendo una direccion y dando focus
-18:43:42.603 INFO  AUTOMATION - Test fallido: keyboard2test
-18:43:42.757 INFO  AUTOMATION - Teardown del padre
-18:43:44.592 INFO  AUTOMATION - Suite finalizada: Default Suite
+21:55:10.292 INFO  AUTOMATION - Suite iniciada: Default Suite
+21:55:10.570 INFO  AUTOMATION - Setup del padre
+21:55:12.971 INFO  AUTOMATION - Comenzando el test: pestanatest
+21:55:13.021 INFO  AUTOMATION - Navegando a la pagina
+21:55:15.058 INFO  AUTOMATION - Haciendo click en boton new tab
+21:55:15.198 INFO  AUTOMATION - verificando el texto
+21:55:15.546 INFO  AUTOMATION - Cerrando la pestana actual
+21:55:15.584 INFO  AUTOMATION - Verificando que se regreso a ventana original
+21:55:15.640 INFO  AUTOMATION - Test exitoso: pestanatest
+21:55:15.773 INFO  AUTOMATION - Teardown del padre
+21:55:15.959 INFO  AUTOMATION - Suite finalizada: Default Suite

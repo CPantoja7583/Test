@@ -1,20 +1,25 @@
-18:43:28.587 INFO  AUTOMATION - Suite iniciada: Default Suite
-18:43:28.631 DEBUG AUTOMATION - Borrando las carpetas de evidencia
-18:43:28.774 INFO  AUTOMATION - Setup del padre
-18:43:28.781 DEBUG AUTOMATION - Inicializando  el drive
-18:43:31.999 DEBUG AUTOMATION - Maximizando pantalla
-18:43:32.041 DEBUG AUTOMATION - Borrando cookies
-18:43:32.057 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
-18:43:32.064 DEBUG AUTOMATION - Asignando driver al webdriver provider
-18:43:32.215 INFO  AUTOMATION - Comenzando el test: keyboard2test
-18:43:32.261 INFO  AUTOMATION - Navegando a la pagina
-18:43:37.987 DEBUG AUTOMATION - Addres: 26977 Zulauf Trace, Nickfort, WY 16889
-18:43:38.006 INFO  AUTOMATION - Esccribiendo una direccion y dando focus
-18:43:42.266 DEBUG AUTOMATION - beforeTestStop
-18:43:42.603 INFO  AUTOMATION - Test fallido: keyboard2test
-18:43:42.603 DEBUG AUTOMATION - Tomando capturas
-18:43:42.715 DEBUG AUTOMATION - tomando page source
-18:43:42.715 DEBUG AUTOMATION - Creando los directorios padres si es que no existen
-18:43:42.757 INFO  AUTOMATION - Teardown del padre
-18:43:42.758 DEBUG AUTOMATION - Matando el driver
-18:43:44.592 INFO  AUTOMATION - Suite finalizada: Default Suite
+21:55:10.292 INFO  AUTOMATION - Suite iniciada: Default Suite
+21:55:10.372 DEBUG AUTOMATION - Borrando las carpetas de evidencia
+21:55:10.570 INFO  AUTOMATION - Setup del padre
+21:55:10.575 DEBUG AUTOMATION - Inicializando  el drive
+21:55:12.752 DEBUG AUTOMATION - Maximizando pantalla
+21:55:12.790 DEBUG AUTOMATION - Borrando cookies
+21:55:12.806 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+21:55:12.814 DEBUG AUTOMATION - Asignando driver al webdriver provider
+21:55:12.971 INFO  AUTOMATION - Comenzando el test: pestanatest
+21:55:13.021 INFO  AUTOMATION - Navegando a la pagina
+21:55:15.051 DEBUG AUTOMATION - Obteniendo el id de la pestana actual
+21:55:15.056 DEBUG AUTOMATION - tab id: F7EDB17B3822F437E1023F1F2DCC6E4A
+21:55:15.058 INFO  AUTOMATION - Haciendo click en boton new tab
+21:55:15.191 DEBUG AUTOMATION - Window handles set: [F7EDB17B3822F437E1023F1F2DCC6E4A, 66D3C79553E7F11C5377D4F6F2B02DAC]
+21:55:15.191 DEBUG AUTOMATION - Nos posicionamos en la nueva pestana
+21:55:15.198 INFO  AUTOMATION - verificando el texto
+21:55:15.546 INFO  AUTOMATION - Cerrando la pestana actual
+21:55:15.575 DEBUG AUTOMATION - Regresando el foco a la ventana original
+21:55:15.584 INFO  AUTOMATION - Verificando que se regreso a ventana original
+21:55:15.630 DEBUG AUTOMATION - beforeTestStop
+21:55:15.640 INFO  AUTOMATION - Test exitoso: pestanatest
+21:55:15.641 DEBUG AUTOMATION - Tomando capturas
+21:55:15.773 INFO  AUTOMATION - Teardown del padre
+21:55:15.773 DEBUG AUTOMATION - Matando el driver
+21:55:15.959 INFO  AUTOMATION - Suite finalizada: Default Suite
