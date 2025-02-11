@@ -7,7 +7,7 @@ import utilities.BaseTest;
 import utilities.Logs;
 
 public class NavegacionTests extends BaseTest {
-    @Test(groups = {regression, smoke})
+    @Test
     public void primertest() {
         final var url = "https://www.saucedemo.com/";
 
@@ -22,7 +22,7 @@ public class NavegacionTests extends BaseTest {
 
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void ejercicio2test() {
         final var urlHeroku = "https://the-internet.herokuapp.com/";
         final var urlGitHub = "https://github.com/";
@@ -44,7 +44,7 @@ public class NavegacionTests extends BaseTest {
 
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void errortest() {
 
         final var urlHeroku = "https://the-internet.herokuapp.com/";
@@ -59,7 +59,7 @@ public class NavegacionTests extends BaseTest {
         Assert.assertEquals(currentUrl, "hola mundo");
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void inicioSesiontest() {
         final var urlOpencart = "https://opencart.abstracta.us/index.php?route=account/login";
         //final var textBox = driver.findElement(By.name("email"));

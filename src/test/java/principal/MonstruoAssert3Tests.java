@@ -18,27 +18,27 @@ public class MonstruoAssert3Tests extends BaseTest {
 
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void primertest() {
         final var primerMounstruo = listaMonstruo.get(0);
         Assert.assertEquals(primerMounstruo.getNombre(), "TOLOSA",
                 "1ER NOMBRE NO HACE MATCH");
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void segundotest() {
         final var n = listaMonstruo.size();
         Assert.assertEquals(n, 14, "longuitud incorrecta");
     }
 
-    @Test(groups = {smoke})
+    @Test
     public void tercertest() {
         final var tercerMonstruo = listaMonstruo.get(2);
         Assert.assertEquals(tercerMonstruo.getNivel(), 22,
                 "3er nivel no hace match");
     }
 
-    @Test(groups = {regression})
+    @Test
     public void cuartotest() {
         final var ultimoMounstruo = listaMonstruo.get(listaMonstruo.size() - 1);
 

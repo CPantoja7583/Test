@@ -22,7 +22,7 @@ public class MonstruoAssert5Tests extends BaseTest {
 
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     @Description("verificación 1er nombre")
     @Severity(SeverityLevel.BLOCKER)
     public void primertest() {
@@ -31,7 +31,7 @@ public class MonstruoAssert5Tests extends BaseTest {
                 "1ER NOMBRE NO HACE MATCH");
     }
 
-    @Test(groups = {regression, smoke})
+    @Test
     @Description("verificando longuitud")
     @Severity(SeverityLevel.MINOR)
     public void segundotest() {
@@ -39,7 +39,7 @@ public class MonstruoAssert5Tests extends BaseTest {
         Assert.assertEquals(n, 14, "longuitud incorrecta");
     }
 
-    @Test(groups = {regression})
+    @Test
     @Description("verificando nivel del 3er elemento")
     @Severity(SeverityLevel.TRIVIAL)
     public void tercertest() {
@@ -48,7 +48,7 @@ public class MonstruoAssert5Tests extends BaseTest {
                 "3er nivel no hace match");
     }
 
-    @Test(groups = {regression})
+    @Test
     @Description("verificando toda la info del ultimo elemento")
     @Severity(SeverityLevel.CRITICAL)
     public void cuartotest() {
@@ -67,8 +67,7 @@ public class MonstruoAssert5Tests extends BaseTest {
 
     @Test(
             dataProvider = CustomData.DP_NAME,
-            dataProviderClass = CustomData.class,
-            groups = {regression}
+            dataProviderClass = CustomData.class
     )
     @Description("verificando edad y niveles de todos")
     @Severity(SeverityLevel.BLOCKER)

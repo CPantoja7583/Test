@@ -9,9 +9,9 @@ import utilities.Logs;
 
 public class SauceDemoTests extends BaseTest {
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void usuarioInvalidotest() {
-        rellenarFormularioLogin("standard_user", "secret_sae");
+        rellenarFormularioLogin("standard_user", "secret");
 
         Logs.info("Verificando el mensaje de error");
         final var errorInicio = driver.findElement(By.cssSelector("H3[data-test='error']"));
@@ -24,7 +24,7 @@ public class SauceDemoTests extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void usuarioValido() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -34,7 +34,7 @@ public class SauceDemoTests extends BaseTest {
         Assert.assertTrue(inventoryList.isDisplayed());
     }
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void detalleProductostest() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -46,14 +46,14 @@ public class SauceDemoTests extends BaseTest {
         Logs.info("Verificando que el InventoriList esté visible");
         Assert.assertTrue(inventoryList.isDisplayed());
 
-        sleep(3000);
+        //sleep(3000);
 
 
         Logs.info("Haciendo click en el primer elemento de la lista");
         imageList.get(0).click();
 
-        Logs.info("Esperando que cargue la pagina");
-        sleep(3000);
+        //Logs.info("Esperando que cargue la pagina");
+        //sleep(3000);
 
         Logs.info("Verificando el detalle del producto");
         softAssert.assertTrue(
@@ -71,7 +71,7 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void select1test() {
         rellenarFormularioLogin("standard_user", "secret_sauce");
 
@@ -97,13 +97,117 @@ public class SauceDemoTests extends BaseTest {
         softAssert.assertAll();
 
     }
-    
+
+    @Test(groups = {regression, smoke})
+    public void select2test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var selectWebElement =
+                driver.findElement(By.cssSelector("select[data-test='product-sort-container']"));
+
+        final var select = new Select(selectWebElement);
+
+        Logs.info("Seleccionamos los item de menos a mayor precio");
+        select.selectByValue("lohi");
+
+        final var priceList = driver.findElements(By.className("inventory_item_price"));
+
+        Logs.info("Obteniendo el primer precio");
+        final var primerPrecio = Double.parseDouble(
+                priceList.get(0).getText().replace("$", ""));
+
+
+        Logs.info("Obteniendo el ultimo precio");
+        final var ultimoPrecio = Double.parseDouble(
+                priceList.get(priceList.size() - 1).getText().replace("$", ""));
+
+        Logs.info("Verificando los precios");
+        softAssert.assertEquals(primerPrecio, 7.99);
+        softAssert.assertEquals(ultimoPrecio, 49.99);
+        softAssert.assertAll();
+
+
+    }
+
+    @Test(groups = {regression, smoke})
+    public void link1test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var facebookLabel = driver.findElement(
+                By.xpath("//a[text()='Facebook']"));
+
+        Logs.info("Verificando que hipervinculo sea correcto");
+        softAssert.assertTrue(facebookLabel.isDisplayed());
+        softAssert.assertTrue(facebookLabel.isEnabled());
+        softAssert.assertEquals(facebookLabel.getAttribute("href"),
+                "https://www.facebook.com/saucelabs");
+        softAssert.assertAll();
+    }
+
+    @Test(groups = {regression, smoke})
+    public void link2test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        final var linkedinLabel = driver.findElement(
+                By.xpath("//a[text()='LinkedIn']"));
+
+        Logs.info("Verificando que hipervinculo sea correcto");
+        softAssert.assertTrue(linkedinLabel.isDisplayed());
+        softAssert.assertTrue(linkedinLabel.isEnabled());
+        softAssert.assertEquals(linkedinLabel.getAttribute("href"),
+                "https://www.linkedin.com/company/sauce-labs/");
+        softAssert.assertAll();
+
+    }
+
+    @Test(groups = {regression, smoke})
+    public void link3test() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Abriendo el menu burger");
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        Logs.info("Esperando que cargue");
+        sleep(5000);
+
+        final var aboutLink = driver.
+                findElement(By.id("about_sidebar_link"));
+
+        Logs.info("Verificando el vinculo about");
+        softAssert.assertTrue(aboutLink.isDisplayed());
+        softAssert.assertTrue(aboutLink.isEnabled());
+        softAssert.assertEquals(aboutLink.getAttribute("href"),
+                "https://saucelabs.com/");
+        softAssert.assertAll();
+    }
+
+    @Test(groups = {regression, smoke})
+    public void logouttest() {
+        rellenarFormularioLogin("standard_user", "secret_sauce");
+
+        Logs.info("Abriendo el menu burger");
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        //Logs.info("Esperando que cargue");
+        //sleep(5000);
+
+        final var logoutButton = driver.findElement(By.id("logout_sidebar_link"));
+
+        Logs.info("Haciendo click en boton logout");
+        logoutButton.click();
+
+        //Logs.info("Esperando que llegue a pagina principal");
+        //sleep(2000);
+
+        Logs.info("Verificando un elemento de la pagina principal");
+        Assert.assertTrue(driver.findElement(By.id("user-name")).isDisplayed());
+    }
 
     private void rellenarFormularioLogin(String username, String password) {
         Logs.info("navegando a la pagina");
         driver.get("https://www.saucedemo.com/");
 
-        sleep(5000);
+        //sleep(5000);
 
         Logs.info("Escribiendo el username");
         driver.findElement(By.id("user-name")).sendKeys(username);
@@ -114,7 +218,7 @@ public class SauceDemoTests extends BaseTest {
         Logs.info("Haciendo click en Login");
         driver.findElement(By.id("login-button")).click();
 
-        sleep(5000);
+        //sleep(5000);
 
     }
 }

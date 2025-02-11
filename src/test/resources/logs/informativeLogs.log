@@ -1,14 +1,8 @@
-14:28:25.135 INFO  AUTOMATION - Suite iniciada: Default Suite
-14:28:25.406 INFO  AUTOMATION - Setup del padre
-14:28:27.576 INFO  AUTOMATION - Comenzando el test: select1test
-14:28:27.716 INFO  AUTOMATION - navegando a la pagina
-14:28:33.718 INFO  AUTOMATION - Escribiendo el username
-14:28:33.807 INFO  AUTOMATION - Escribiendo la contraseña
-14:28:33.886 INFO  AUTOMATION - Haciendo click en Login
-14:28:39.089 INFO  AUTOMATION - seleccionamos los items de manera alfabetica Z->A
-14:28:39.231 INFO  AUTOMATION - obteniendo el primer elemento
-14:28:39.256 INFO  AUTOMATION - Obteneiendo el ultimo elemento
-14:28:39.276 INFO  AUTOMATION - Verificando los nombres
-14:28:39.304 INFO  AUTOMATION - Test exitoso: select1test
-14:28:39.436 INFO  AUTOMATION - Teardown del padre
-14:28:41.204 INFO  AUTOMATION - Suite finalizada: Default Suite
+18:43:28.587 INFO  AUTOMATION - Suite iniciada: Default Suite
+18:43:28.774 INFO  AUTOMATION - Setup del padre
+18:43:32.215 INFO  AUTOMATION - Comenzando el test: keyboard2test
+18:43:32.261 INFO  AUTOMATION - Navegando a la pagina
+18:43:38.006 INFO  AUTOMATION - Esccribiendo una direccion y dando focus
+18:43:42.603 INFO  AUTOMATION - Test fallido: keyboard2test
+18:43:42.757 INFO  AUTOMATION - Teardown del padre
+18:43:44.592 INFO  AUTOMATION - Suite finalizada: Default Suite

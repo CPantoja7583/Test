@@ -6,7 +6,7 @@ import utilities.BaseTest;
 import utilities.Logs;
 
 public class Navegacion2Tests extends BaseTest {
-    @Test(groups = {regression})
+    @Test
     public void fallatest() {
 
         final var urlHeroku = "https://the-internet.herokuapp.com/";
@@ -21,7 +21,7 @@ public class Navegacion2Tests extends BaseTest {
         Assert.assertEquals(currentUrl, "hola mundo");
     }
 
-    @Test(groups = {regression})
+    @Test
     public void tecnovatest() {
 
         final var urlOpencart = "https://opencart.abstracta.us/index.php?route=account/login";
