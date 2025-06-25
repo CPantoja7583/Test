@@ -1,11 +1,10 @@
-21:55:10.292 INFO  AUTOMATION - Suite iniciada: Default Suite
-21:55:10.570 INFO  AUTOMATION - Setup del padre
-21:55:12.971 INFO  AUTOMATION - Comenzando el test: pestanatest
-21:55:13.021 INFO  AUTOMATION - Navegando a la pagina
-21:55:15.058 INFO  AUTOMATION - Haciendo click en boton new tab
-21:55:15.198 INFO  AUTOMATION - verificando el texto
-21:55:15.546 INFO  AUTOMATION - Cerrando la pestana actual
-21:55:15.584 INFO  AUTOMATION - Verificando que se regreso a ventana original
-21:55:15.640 INFO  AUTOMATION - Test exitoso: pestanatest
-21:55:15.773 INFO  AUTOMATION - Teardown del padre
-21:55:15.959 INFO  AUTOMATION - Suite finalizada: Default Suite
+20:34:36.931 INFO  AUTOMATION - Suite iniciada: Surefire suite
+20:34:37.245 INFO  AUTOMATION - Setup del padre
+20:34:42.171 INFO  AUTOMATION - Comenzando el test: logintest
+20:34:42.221 INFO  AUTOMATION - navegando a la pagina
+20:34:47.114 INFO  AUTOMATION - Escribiendo el username
+20:34:47.291 INFO  AUTOMATION - Escribiendo el pass
+20:34:47.386 INFO  AUTOMATION - Presionando enter para ingresar
+20:34:55.203 INFO  AUTOMATION - Test fallido: logintest
+20:34:55.381 INFO  AUTOMATION - Teardown del padre
+20:34:55.901 INFO  AUTOMATION - Suite finalizada: Surefire suite

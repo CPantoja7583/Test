@@ -56,7 +56,7 @@ public class NavegacionTests extends BaseTest {
         final var currentUrl = driver.getCurrentUrl();
 
         Logs.info("Verificando la url");
-        Assert.assertEquals(currentUrl, "hola mundo");
+        Assert.assertEquals(currentUrl, "hola mundo jaja");
     }
 
     @Test

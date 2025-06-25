@@ -1,25 +1,21 @@
-21:55:10.292 INFO  AUTOMATION - Suite iniciada: Default Suite
-21:55:10.372 DEBUG AUTOMATION - Borrando las carpetas de evidencia
-21:55:10.570 INFO  AUTOMATION - Setup del padre
-21:55:10.575 DEBUG AUTOMATION - Inicializando  el drive
-21:55:12.752 DEBUG AUTOMATION - Maximizando pantalla
-21:55:12.790 DEBUG AUTOMATION - Borrando cookies
-21:55:12.806 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
-21:55:12.814 DEBUG AUTOMATION - Asignando driver al webdriver provider
-21:55:12.971 INFO  AUTOMATION - Comenzando el test: pestanatest
-21:55:13.021 INFO  AUTOMATION - Navegando a la pagina
-21:55:15.051 DEBUG AUTOMATION - Obteniendo el id de la pestana actual
-21:55:15.056 DEBUG AUTOMATION - tab id: F7EDB17B3822F437E1023F1F2DCC6E4A
-21:55:15.058 INFO  AUTOMATION - Haciendo click en boton new tab
-21:55:15.191 DEBUG AUTOMATION - Window handles set: [F7EDB17B3822F437E1023F1F2DCC6E4A, 66D3C79553E7F11C5377D4F6F2B02DAC]
-21:55:15.191 DEBUG AUTOMATION - Nos posicionamos en la nueva pestana
-21:55:15.198 INFO  AUTOMATION - verificando el texto
-21:55:15.546 INFO  AUTOMATION - Cerrando la pestana actual
-21:55:15.575 DEBUG AUTOMATION - Regresando el foco a la ventana original
-21:55:15.584 INFO  AUTOMATION - Verificando que se regreso a ventana original
-21:55:15.630 DEBUG AUTOMATION - beforeTestStop
-21:55:15.640 INFO  AUTOMATION - Test exitoso: pestanatest
-21:55:15.641 DEBUG AUTOMATION - Tomando capturas
-21:55:15.773 INFO  AUTOMATION - Teardown del padre
-21:55:15.773 DEBUG AUTOMATION - Matando el driver
-21:55:15.959 INFO  AUTOMATION - Suite finalizada: Default Suite
+20:34:36.931 INFO  AUTOMATION - Suite iniciada: Surefire suite
+20:34:37.017 DEBUG AUTOMATION - Borrando las carpetas de evidencia
+20:34:37.245 INFO  AUTOMATION - Setup del padre
+20:34:37.251 DEBUG AUTOMATION - Inicializando  el drive
+20:34:41.981 DEBUG AUTOMATION - Maximizando pantalla
+20:34:42.022 DEBUG AUTOMATION - Borrando cookies
+20:34:42.037 DEBUG AUTOMATION - Seteando implicit wait de 5 segundos
+20:34:42.045 DEBUG AUTOMATION - Asignando driver al webdriver provider
+20:34:42.171 INFO  AUTOMATION - Comenzando el test: logintest
+20:34:42.221 INFO  AUTOMATION - navegando a la pagina
+20:34:47.114 INFO  AUTOMATION - Escribiendo el username
+20:34:47.291 INFO  AUTOMATION - Escribiendo el pass
+20:34:47.386 INFO  AUTOMATION - Presionando enter para ingresar
+20:34:54.532 DEBUG AUTOMATION - beforeTestStop
+20:34:55.203 INFO  AUTOMATION - Test fallido: logintest
+20:34:55.203 DEBUG AUTOMATION - Tomando capturas
+20:34:55.331 DEBUG AUTOMATION - tomando page source
+20:34:55.331 DEBUG AUTOMATION - Creando los directorios padres si es que no existen
+20:34:55.381 INFO  AUTOMATION - Teardown del padre
+20:34:55.381 DEBUG AUTOMATION - Matando el driver
+20:34:55.901 INFO  AUTOMATION - Suite finalizada: Surefire suite

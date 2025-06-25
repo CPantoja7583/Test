@@ -1,1 +1,1 @@
-./mvnw clean test -Dtest="SauceDemoTests" surefire-report:report
+./mvnw clean test -Dtest="ClubTests" surefire-report:report

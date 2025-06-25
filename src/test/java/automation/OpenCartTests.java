@@ -26,17 +26,20 @@ public class OpenCartTests extends BaseTest {
     public void usuarioValidotest() {
         rellenarFormularioLogin("cpan9112@gmail.com", "2dq7qN5H8ra@CC");
 
+        Logs.info("Validando Login ok");
+        final var loginSucces = driver.findElement
+                (By.className("btn btn-inverse btn-block btn-lg dropdown-toggle"));
+
+        softAssert.assertTrue(loginSucces.isDisplayed());
+
         //Logs.info("Haciendo click en Your Store");
         //driver.findElement(By.id("logo")).click();
 
-        Logs.info("Haciendo click en Your Store");
-        driver.findElement(By.xpath("//a[text()='Your Store']")).click();
+        //Logs.info("Haciendo click en Your Store");
+        //driver.findElement(By.xpath("//a[text()='Your Store']")).click();
         //"//a[text()='Your Store']"
 
-        sleep(5000);
-
-        Logs.info("Haciendo click en MAcbook");
-        driver.findElement(By.xpath("//img[@alt='MacBook']")).click();
+        //sleep(5000);
 
 
         //("//img[@alt='MacBook']")
